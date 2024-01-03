@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head><script>        
+         function check(){  
+         
+         var un= document.getElementsByName("t1")[0].value;
+         var pass= document.getElementsByName("p1")[0].value;
+         if(un ==="ironman" && pass ==="password")
+         {
+             alert('Welcome Ironman ');
+             window.location.href="login.jsp";
+         }
+         else
+         {
+             alert('Invalid UserName or Password ');
+         }
+         return false;
+         }
+        </script>
+       <title>Login User</title>        
+    </head>
+    <body>
+    <center>
+        <h1> Ironman GYM</h1>
+        <form action="login.jsp" method="post">
+            User       <input type="text" name="t1"><br><br>    
+            Password <input type="password" name="p1"><br><br>
+            <input type="submit" name="b1" value="Log-IN" onclick="return check();" >
+        </form>
+    </center>
+    </body>
+</html>
